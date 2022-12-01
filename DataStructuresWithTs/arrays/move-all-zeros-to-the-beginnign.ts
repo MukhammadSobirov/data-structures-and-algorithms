@@ -1,5 +1,12 @@
 const input = [1, 10, 20, 0, 59, 63, 0, 88, 0];
 
+/*
+ * we'll start at the end of the array with two indeces "read" and "write"
+ * if the value at the "read" is 0, then decrement the read pointer
+ * if the value at the "read" != 0, then assign value if "write" to the value of "read" and decrement both
+ * once read is < 0, replace the rest of the values with 0
+ */
+
 function moveZeros(arr: number[]) {
   // Return if the list is empty
   if (arr.length < 1) {
